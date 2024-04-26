@@ -3,6 +3,7 @@ let accountEmail = "subhadip@gmail.com"
 var accountPassword = "434232"
 accountName = "subhadip"
 let accountState; 
+let temp = null
 
 // accountId = 1313 // not allowed
 
@@ -15,4 +16,4 @@ accountEmail = "anusuya@gmail.com"
 accountPassword = "232323"
 accountName = "anusuya"
 
-console.table([accountId,accountEmail,accountPassword,accountName,accountState])
+console.table([accountId,accountEmail,accountPassword,accountName,accountState,temp])
