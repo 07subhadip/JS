@@ -54,3 +54,19 @@ const myFunction = function(){
 
 console.table([gameList,myObj])
 console.log(myFunction)
+
+// Primitive data -> Stack   Non-Primitive data -> Heap
+
+// in stack data are copied but in heap data are not copied they are referenced
+
+let user = {
+    name: "subhadip hensh",
+    age: 23
+}
+
+let user2 = user
+
+user2.name = "Anusuya Ghosal"
+
+console.log(user.name);
+console.log(user2.name)
