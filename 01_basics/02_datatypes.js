@@ -14,3 +14,11 @@ console.table([name,age,isValid])
 
 console.log(typeof null);       // object
 console.log(typeof undefined);  // undefined
+
+// Primitive 
+
+// 7 types : String, Number, Boolean, BigInt, null, undefined, Symbol
+
+// Reference (Non-Primitive)
+
+// Object, Function, Array
