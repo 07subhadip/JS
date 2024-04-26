@@ -29,3 +29,19 @@ let stringInNumber = String(isNumber)
 
 console.log(typeof stringInNumber);
 console.log(stringInNumber);
+
+
+// *************************** OPERATIONS ***************************
+
+console.log(1 + 2 + "2");   // 32
+console.log("1" + 2 + 2);   // 122
+
+console.log(true);
+console.log(+true);
+
+console.log("");
+console.log(+"");   // in boolean empty string is a false value
+
+let gameCount = 100
+console.log(++gameCount);
+console.log(gameCount++);
