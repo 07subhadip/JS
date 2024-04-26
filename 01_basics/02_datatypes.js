@@ -22,3 +22,35 @@ console.log(typeof undefined);  // undefined
 // Reference (Non-Primitive)
 
 // Object, Function, Array
+
+const bigNumber = 43242323423523454534n // converted to BigInt
+console.log(typeof bigNumber);
+
+const oneNumber = Symbol('124')
+const anotherNumber = Symbol('124')
+
+console.log(typeof oneNumber);
+console.log(oneNumber);
+console.log(typeof anotherNumber);
+console.log(anotherNumber);
+
+console.log(oneNumber === anotherNumber);   // false 
+
+// array
+
+let gameList = ["Cricket","Football","Badminton"]
+// object
+// in object we can't initialize data using = sign
+let myObj = {
+    name: "subhadip",
+    age: 23
+}
+
+//function
+
+const myFunction = function(){
+    console.log("Hello World");
+}
+
+console.table([gameList,myObj])
+console.log(myFunction)
