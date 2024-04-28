@@ -26,5 +26,11 @@ const newArr = myArr.join()
 console.log(newArr);
 console.log(typeof newArr); // string
 
-console.log("A",myArr)
-const myNewArr = myArr.sloce
+// let myArr = [1,2,3,4,"subhadip"]
+
+console.log(myArr)
+const myNewArr = myArr.slice(1,3)   // will select the given elements excluding 3rd element
+console.log("A",myNewArr);
+const myNewArr2 = myArr.splice(1,3) // will cut the give elements including the 3rd element
+console.log("B",myNewArr2);
+console.log(myArr);                 // array has been cut and reduced in size and print-> [12,"subhadip"]
