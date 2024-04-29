@@ -29,8 +29,10 @@ let anotherObj = {
     name: "Anu"
 }
 
-anotherObj.greeting = function greeting{
+anotherObj.greeting = function greeting(){
     console.log("hello world");
 }
 
 console.log(anotherObj.greeting());
+
+// greeting()
