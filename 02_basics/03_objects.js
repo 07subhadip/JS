@@ -36,6 +36,13 @@ anotherObj.greeting = function (){
 anotherObj.greetingTwo = function (){
     console.log(`Hello , Good Evening, ${this.name}`);
 }
+<<<<<<< HEAD
+=======
+
+console.log(anotherObj.greeting());
+console.log(anotherObj.greeting);
+console.log(anotherObj.greetingTwo());
+>>>>>>> a7ea6cbbba8dc18cddf69b1af0f5e6f7e56a70da
 
 console.log(anotherObj.greeting());
 console.log(anotherObj.greeting);
