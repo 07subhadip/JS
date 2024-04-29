@@ -42,3 +42,9 @@ console.log(anotherObj.greeting);
 console.log(anotherObj.greetingTwo());
 
 // greeting()
+// cheking i it is changing in github also or not
+
+// git filter-branch --env-filter 'if [ "$GIT_AUTHOR_EMAIL" = "suhadiphensh31102000@gmail.com" ]; then
+// GIT_AUTHOR_EMAIL=subhadiphensh31102000@gmail.com;
+// export GIT_AUTHOR_EMAIL;
+// fi' -- --all
