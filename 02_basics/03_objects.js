@@ -29,10 +29,16 @@ let anotherObj = {
     name: "Anu"
 }
 
-anotherObj.greeting = function greeting(){
+anotherObj.greeting = function (){
     console.log("hello world");
 }
 
+anotherObj.greetingTwo = function (){
+    console.log(`Hello , Good Evening, ${this.name}`);
+}
+
 console.log(anotherObj.greeting());
+console.log(anotherObj.greeting);
+console.log(anotherObj.greetingTwo());
 
 // greeting()
