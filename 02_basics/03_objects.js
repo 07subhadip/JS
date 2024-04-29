@@ -50,8 +50,3 @@ console.log(anotherObj.greetingTwo());
 // fi' -- --all
 
 // this line is to change the user email 
-<<<<<<< HEAD
-=======
-
-// checking in devcontainer
->>>>>>> 27e338e3301fb52509ed8b4865a1207f16881847
