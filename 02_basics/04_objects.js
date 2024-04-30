@@ -19,3 +19,5 @@ const anotherUser = {
 }
 
 console.log(anotherUser.fullName.userName);
+
+// just one comment
