@@ -59,3 +59,26 @@ console.log(Object.values(anobject));           // return values in an array
 console.log(Object.entries(anobject));          // convert each key and values in array
 console.log(anobject.hasOwnProperty('name'));   // return in boolean
 
+const course = {
+    courseName: "JS",
+    type: "Online",
+    time: "15 Days"
+}
+
+
+// object destructuring
+
+const {courseName} = course
+
+const {time: duration} = course         // destructuring by creating another name
+
+console.log(courseName);
+console.log(duration);
+
+
+// {
+//     "name":"subhadip",
+//     "class":"MSc in Computer Science",
+//     "Student": false
+// }
+
