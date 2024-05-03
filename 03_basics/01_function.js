@@ -55,3 +55,13 @@ console.log(accessObject({
     relation: "my wife",
     age: 23
 }))
+
+const myArray = [100,200,300]
+
+function getArray(anArray){
+    return anArray[2]
+}
+
+console.log(getArray(myArray));
+
+console.log(getArray([200,400,600,500]));
