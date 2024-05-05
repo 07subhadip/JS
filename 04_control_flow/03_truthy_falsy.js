@@ -56,3 +56,7 @@ console.log(result5);
 const price = 100
 //condition ? true value : false value
 price<50 ? console.log(true):console.log(false)
+
+// in this case it will print the last value whether it is null or undefined
+const check = undefined ?? null
+console.log(check);
