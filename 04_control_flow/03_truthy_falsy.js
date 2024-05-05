@@ -60,7 +60,3 @@ price<50 ? console.log(true):console.log(false)
 // in this case it will print the last value whether it is null or undefined
 const check = undefined ?? null
 console.log(check);
-
-
-// checking if dev is doing it well
-console.log("hello");
