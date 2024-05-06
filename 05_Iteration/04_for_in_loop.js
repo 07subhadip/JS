@@ -14,6 +14,9 @@ for (const key in myArr) {
     console.log(myArr[key]);
 }
 
+
+// this is not iteratable
+
 // const map = new Map()
 // map.set('IN','INDIA')
 // map.set('AUS','Australia')
@@ -24,5 +27,3 @@ for (const key in myArr) {
 // for (const key in map) {
 //     console.log(key);
 // }
-
-// this is not iteratable
