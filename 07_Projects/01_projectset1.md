@@ -6,11 +6,10 @@
 # Solution code
 
 ## project 1 
-### 01- ColorChanger
+### 01- ColorChanger.js
 
 ``` Javascript
-console.log('subhadip')
-
+// Project 1 ---> ColorChanger 
 
 const buttons = document.querySelectorAll('.button')
 // console.log(button);
@@ -66,4 +65,11 @@ buttons.forEach(function (button){
         }   
     })
 });
+```
+
+## Project 2
+### 
+
+```javascript
+console.log("Project 2 ---> )
 ```
