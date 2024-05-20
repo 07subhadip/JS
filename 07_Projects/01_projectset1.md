@@ -1,11 +1,11 @@
 # Projects related to DOM
 
-## project link
-[click here]()
+## Project link
+[click here](https://github.com/07subhadip/JS/tree/main/07_Projects)
 
 # Solution code
 
-## project 1 
+## Project 1 
 ### 01 &rarr; ColorChanger.js
 
 ``` Javascript
@@ -97,5 +97,24 @@ form.addEventListener('submit',function(e){
         } 
     }
 });
+```
+
+## Project 3
+### 03 &rarr; Digital Clock
+
+```javascript
+const clock = document.querySelector("#Clock")
+// let date = new Date();
+// console.log(date.toLocaleTimeString());
+
+setInterval(() => {
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString()
+}, 1000);
+```
+## Project 4
+###
+
+```javascript
 
 ```
