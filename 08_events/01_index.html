@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>My Page for HTML event listener</h2>
+    <div class="container">
+        <ul id="images">
+            <li><img id="fish" src="https://images.pexels.com/photos/2707010/pexels-photo-2707010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fish" width="200"></li>
+            <li><img id="tiger" src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="200" alt="tiger" ></li>
+            <li><img id="Developer" src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="200" alt="Developer"></li>
+            <li><img id="Hill" src="https://images.pexels.com/photos/705075/pexels-photo-705075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="200" alt="Hill"></li>
+            <li><a id="google" href="https://google.com" target="_blank" style="color: aliceblue;">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+        // type, timestamp , defaultPrevent
+    // target, toElement, srcElement , currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log(`images clicked`);
+    // },false)
+
+    // document.getElementById('fish').onclick = function(){
+    //     alert('fish clicked')
+    // }
+
+    // document.getElementById('tiger').addEventListener('click',function(){
+    //     alert('tiger clicked')
+    //     console.log(e);
+    // },false);   
+
+    // document.getElementById('Hill').addEventListener('click',function(e){
+    //     console.log(`Owl Clicked`);
+    //     e.stopPropagation()     // this is to stop the propagation to the next element
+    // },false);   // if we use true in both images and here the printing in the log will be reversed
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log(`google clicked`);
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    // },false)
+    
+    
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target);
+        console.log(e.target.tagName);
+        let removeIt = e.target.parentNode
+        console.log(removeIt);
+        if(e.target.tagName === 'IMG'){
+            console.log(`${e.target.id} removed`)
+            removeIt.remove();
+        }  
+    },false)
+</script>
+</html>
