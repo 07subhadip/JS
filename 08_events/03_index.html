@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items:center;
+            text-align: center;
+            justify-content: center;
+            border: 2px solid white;
+
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Subhadip Hensh</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+</body>
+<script>
+    const start = document.querySelector('.start')
+    const stop = document.querySelector('.stop')
+    
+    function printName(){
+        console.log("Subhadip Hensh");
+    }
+
+    start.addEventListener("click",function(){
+        itemId = setInterval(printName, 1000);
+    })
+
+    stop.addEventListener("click",function(){
+        clearInterval(itemId)
+        console.log("Stopped");
+    })
+</script>
+</html>

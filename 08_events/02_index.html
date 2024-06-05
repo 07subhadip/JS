@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.82); color: aliceblue;">
+    <h1>Subhadip Hensh</h1>
+    <button class="stop">Stop</button>
+
+</body>
+<script>
+    const nameFunction = function(){
+        console.log('Subhadip Hensh');
+    }
+    function changeName(){
+        document.querySelector('h1').innerHTML = "Anusuya Ghosal"
+    }
+    const changeMyName = setTimeout(changeName,3000)
+
+    document.querySelector('.stop').addEventListener('click',function(){
+        clearTimeout(changeMyName)
+        console.log(`Stopped`);
+    })
+</script>
+</html>
