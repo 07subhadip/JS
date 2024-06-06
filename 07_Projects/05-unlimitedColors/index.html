@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Colors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            display: flex;
+            gap: 20px;
+            /* background-color: black; */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background:linear-gradient(to left,#2f2f2f,#ff0f0f);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 24px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button.start {
+            background-color: #5cb7df;
+            color: #fff;
+        }
+
+        button.stop {
+            background-color: #5cb7df;
+            color: #fff;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://github.com/07subhadip">Github Profile</a>
+    </nav>
+    <h1>Start should change the background color every second</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+</body>
+    <script src="script.js"></script>
+</html>
