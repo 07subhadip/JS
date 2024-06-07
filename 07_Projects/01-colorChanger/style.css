@@ -1,41 +1,90 @@
-html{
+/* style.css */
+
+/* Resetting default margin and padding */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-span{
-    display: block;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfafa;
+    color: #333;
 }
 
-.canvas{
-    margin: 100px auto 100px;
-    width: 80%;
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 15px 0;
     text-align: center;
 }
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #555;
+}
 
-.button{
-    width: 100px;
-    height: 100px;
-    border: solid white 3px;
-    border-radius: 10px;
+/* Canvas styles */
+.canvas {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #666;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+h2 span {
+    font-weight: bold;
+    color: black;
+}
+
+/* Color buttons */
+.button {
     display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 2px solid transparent;
 }
-
-#grey{
-    background:grey;
+.button:hover {
+    transform: scale(1.1);
+    border-color: #777;
 }
-
-#white{
-    background: white;
+#grey {
+    background-color: #888;
 }
-
-#blue{
-    background: blue;
+#white {
+    background-color: #fff;
+    border: 2px solid #777;
 }
-
-#yellow{
-    background: yellow;
+#blue {
+    background-color: #3498db;
 }
-
-#purple{
-    background: purple;
+#yellow {
+    background-color: #f1c40f;
+}
+#purple {
+    background-color: #9b59b6;
 }
