@@ -9,7 +9,9 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    /* background-color: linear-gradient(to bottom left,); */
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: #333;
     line-height: 1.6;
 }
@@ -48,7 +50,7 @@ h1 {
     text-align: center;
     margin-bottom: 1.5em;
     font-size: 3em;
-    color: #333;
+    color: #ffffff;
     animation: fadeInDown 1s ease-in-out;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
