@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request and getting </title>
+    <style>
+        body{
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right,rgb(240, 119, 19),white ,green);
+        }
+       .card {
+            border: 2px solid none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            font-size: larger;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img alt="User image" id="user-image">
+        <h2 id="username"></h2>
+        <p>Followers: <span id="followers-count"></span></p>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        const ApiURL = "https://api.github.com/users/07subhadip"
+        const xhr = new XMLHttpRequest()
+
+        xhr.open("GET",ApiURL,true)
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4 && xhr.status == 200){
+                const response = JSON.parse(xhr.responseText)
+                const imgElement = document.getElementById('user-image')
+                const usernameElement = document.getElementById('username')
+                const followerCountElement = document.getElementById('followers-count')
+
+                imgElement.src = response.avatar_url
+                usernameElement.textContent = response.login
+                followerCountElement.textContent = response.followers
+            }
+        };
+        xhr.send()
+    });
+</script>
+</html>
