@@ -1,0 +1,141 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 3em;
+    color: #333;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.project-link {
+    background-color: #fff;
+    min-width: 250px;
+    height: 100px;
+    padding: 1em;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-link:hover {
+    transform: translateY(-5px);
+    background-color: #f9f9f9;
+}
+
+.project-link::after {
+    content: '➜';
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.project-link:hover::after {
+    margin-left: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: realtive;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em; /* Add margin-top */
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project-link:nth-child(odd) {
+    animation: slideIn 1s ease-in-out;
+}
+
+.project-link:nth-child(even) {
+    animation: slideIn 1s ease-in-out;
+    animation-delay: 0.5s;
+}

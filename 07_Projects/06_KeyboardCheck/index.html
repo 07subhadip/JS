@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Check</title>
+    <style>
+       /* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    background-color: #282c34;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #61dafb;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #21a1f1;
+    border-bottom: 2px solid #61dafb;
+}
+
+nav a[aria-current="page"] {
+    color: #21a1f1;
+}
+
+/* Content Styles */
+.project {
+    margin-top: 80px; /* To avoid content being hidden under the fixed nav */
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Key Information Styles */
+.key {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 20px;
+}
+
+.color {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 2px double #ddd;
+}
+
+th {
+    background-color: #16c7f8;
+    color: #282c34;
+}
+
+td {
+    font-size: 18px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .project {
+        width: 95%;
+        margin-top: 100px;
+    }
+
+    th, td {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://github.com/07subhadip">Github Profile</a>
+    </nav>
+    <div class="project">
+        <div id="insert">
+            <div class="key">Press the key and watch magic</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
